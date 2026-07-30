@@ -1,0 +1,349 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --menu-gradient: linear-gradient(45deg,pink,purple,plum);
+    --thick-theme: purple;
+    --light-theme: plum;
+    --dark-theme: rgb(20, 1, 18);
+    --trans-white: rgba(255, 255, 255, 0.157);
+    --trans-light: rgba(224, 155, 224, 0.164);
+    --Ulight-theme: rgba(255, 117, 255, 0.103);
+}
+
+body {
+    background-color: var(--dark-theme);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+menu {
+    padding: 0;
+    height: 40px;
+    margin: 0;
+    background: linear-gradient(45deg,purple 50%,rgb(104, 0, 104) 30%);
+    display: flex;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ass-btn {
+    transition: 0.3s;
+}
+
+.ass-btn:active {
+    transform: scale(1.1,1.1);
+}
+
+menu button {
+    background-color: transparent;
+    color: var(--light-theme);
+    height: 100%;
+    border: none;
+    font-family: Tahoma;
+    font-size: 16px;
+    margin: 0px 20px;
+}
+
+menu button:hover {
+    background-color: var(--trans-white);
+}
+
+.billbd {
+    margin: 0;
+    padding: 10px;
+    color: white;
+    background-image: var(--menu-gradient);
+}
+
+.mobile-menu {
+    visibility: hidden;
+    height: 0;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+}
+
+.text {
+    margin: 50px;
+    color: whitesmoke;
+}
+
+.ico-btn {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    transition-duration: 0.3s;
+}
+
+.ico-btn:active {
+    transform: scale(1.2,1.2);
+}
+
+.mid {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0px 0px 10px 4px var(--Ulight-theme);
+    } 
+    50% {
+        box-shadow: 0px 0px 15px 4px var(--Ulight-theme);
+    }
+    100% {
+        box-shadow: 0px 0px 10px 4px var(--Ulight-theme);
+    } 
+}
+
+.form1 {
+    padding: 10px;
+    background-color: var(--trans-light);
+    width: 80%;
+    max-width: 500px;
+    color: white;
+    font-family: Tahoma;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 4px var(--light-theme);
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    color: var(--light-theme);
+
+}
+
+
+.form1 .title {
+    font-weight: bold;
+    color: white;
+}
+
+.form1 .details input {
+    background-color: rgba(0, 0, 0, 0.356);
+    width: 90%;
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    padding: 0px 10px;
+
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.load {
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.form1 .details {
+    text-align: left;
+}
+
+.form1 .details select {
+    background-color: rgba(0, 0, 0, 0.356);
+    color: whitesmoke;
+    width: 90%;
+    border: none;
+    height: 20px;
+    border-radius: 7px;
+}
+
+.form1 .details .keyBtn {
+    text-align: center;
+}
+
+.form1 .details .keyBtn button {
+    color: white;
+    background-color: var(--dark-theme);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0px 5px;
+    width: 100px;
+    border: none;
+    transition-duration: 0.3s;
+
+}
+
+.form1 .details .keyBtn button:active {
+    transform: scale(1.2,1.2)
+}
+
+footer {
+    color: rgba(255, 182, 255, 0.808);
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(45deg,rgba(0, 0, 0, 0.356) 50%,rgba(46, 0, 46, 0.308) 20%);
+    border-top: 2px solid rgba(0, 0, 0, 0.356);
+}
+
+.box p {
+    margin: 5px;
+    padding: 0;
+}
+
+.little {
+    font-size: 16px;
+    color:white;
+}
+
+.tagnum {
+    width: 80%;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.tagnum .info {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    margin: 15px;
+    font-weight: 300;
+    transform: translateY(-30px);
+}
+
+.num {
+    transform: translate(-18px,-18px);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: red;
+}
+
+.box {
+    text-align: left;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid var(--Ulight-theme);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.356);
+    color: var(--light-theme);
+    font-family: Tahoma;
+}
+
+.white-btn {
+    margin: 30px 0px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--light-theme);
+    color: var(--thick-theme);
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.ass-btn {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid var(--light-theme);
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--light-theme);
+    font-weight: bold;
+}
+
+.dnt-btn {
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    background-color: transparent;
+    color: yellow;
+    font-weight: bold;
+}
+
+@keyframes pumpA {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.pump {
+    animation-name: pumpA;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-play-state: running;
+}
+
+@media (max-width: 450px){
+    menu {
+        position: absolute;
+        left: -250px;
+        transition-duration: 0.5s;
+        height: 100%;
+        width: 200px;
+        display: block;
+        overflow: hidden;
+        z-index: 1;
+    }
+    menu button {
+        margin: 0;
+        height: 10px;
+        width: 100%;
+        padding: 30px;
+        text-align: left;
+    }
+    menu .billbd {
+        background-image: linear-gradient(90deg,white,white);
+        color: var(--thick-theme);
+    }
+    menu .white-btn {
+        visibility: visible;
+    }
+    menu .billbd::after {
+        content: "Menu";
+        font-family: Tahoma;
+        font-style: italic;
+        font-weight: bold;
+    }
+    .billbd {
+        width: 100%;
+    }
+    .mobile-menu {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        visibility: visible;
+        z-index: 1;
+        height: 40px;
+        background-color: var(--thick-theme);
+    }
+}

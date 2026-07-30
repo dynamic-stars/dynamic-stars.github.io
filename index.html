@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="logo.png">
+    <title>Dynamic Stars VI</title>
+</head>
+<body>
+    <menu id="menu">
+        <div class="billbd">
+            <i>Dynamic Stars.</i>
+        </div>
+        <br>
+        <a href="index.html"><button><img src="src/icon/home.png" width="20px"> Home</button></a>
+        <br>
+        <a href="about.html"><button><img src="src/icon/about.png" width="20px"> About Us</button></a>
+        <br>
+        <a href="contact.html"><button><img src="src/icon/tel.png" width="20px"> Contact Us</button></a>
+        <br>
+        <a href="support.html"><button><img src="src/icon/thumb.png" width="20px"> Support</button></a>
+        <button class="white-btn" onclick="toggleMenu()">CLOSE</button>
+    </menu>
+    <header class="mobile-menu" id="mobm">
+            <button class="ico-btn" onclick="toggleMenu()"><img src="src/icon/menu.png" width="30px"></button>
+            <div class="billbd">
+                <i>Dynamic Stars.</i>
+            </div>
+    </header>
+    <main id="main">
+        <div class="text">
+            <p><strong>
+                <i>Welcome to Dynamic Stars Vocatinal Institute.</i>
+            </strong></p>
+            <p><strong>
+                <i>Here we offer Basic Computer Coureses for:</i>
+            </strong></p>
+            <p><strong>
+                <i>IT Novice, Rural areas & Kids</i>
+            </strong></p>
+        </div>
+
+        <div class="mid">
+            <form class="form1" id="regform">
+                <label class="title">Proceed to class</label>
+                <br>
+                <div class="details">
+                    <label>Enter name:</label>
+                    <br>
+                    <input id="name" minlength="3" required placeholder="Full name">
+                    <br>
+                    <label>Whatsapp:</label>
+                    <br>
+                    <input id="number" type="tel" maxlength="15" minlength="11" required>
+                    <br>
+                    <p class="keyBtn">
+                        <button type="submit">Log In</button>
+                        <button type="button" onclick="toRegForm()">Not Registered</button>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <div class="text">
+            <p><strong>
+                <i>Learn an IT skill now and become a veteran in ITs.</i>
+            </strong></p>
+        </div>
+        <div class="mid">
+            <img src="src/IMG-2.jpg" width="50%">
+        </div>
+
+        <div class="text">
+            <p><strong>
+                <i>This is Dynamic Stars VI were we build dreams for youths.</i>
+            </strong></p>
+           
+        </div>
+        <div class="mid">
+            <div class="box" style="display: flex;">
+                <img src="src/EVD-1.jpg" width="50%" style="border-radius: 10px; margin: 0">
+                <img src="src/EVD-2.jpg" width="45%" style="border-radius: 10px; margin-left: 5%">
+            </div>
+        </div>
+        <div class="mid">
+            <div class="box">
+                <p><strong>DONATIONS</strong></p>
+                <div id="donations" class="little">
+                </div>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="box">
+                <p><strong>DON'T MISS OUT</strong></p>
+                <p class="little">
+                    Many talented young people and adults in Nigeria and other countries cannot afford university education. 
+                    SKILL-UP Vocational Training Center was created to provide FREE practical training in Computer Technology, 
+                    Fashion Design and Catering, 
+                    helping people gain valuable skills, start businesses and support their families.
+                </p>
+            </div>
+        </div>
+        <div class="mid">
+            <img src="src/toon1.png" width="50%">
+        </div>
+        <footer>
+            <br>
+            <strong>SKILL-UP VOCATIONAL TRAINING CENTER LAGOS</strong>
+            <br>
+            Empowering Youth • Creating Jobs • Building the Future
+            
+            © 2026 SKILL-UP Vocational Training Center Lagos
+        </footer>
+    </main>
+    <script src="scripts/website.js"></script>
+    <script type="module" src="scripts/home.js"></script>
+    <script type="module" src="scripts/donations.js"></script>
+</body>
+</html>

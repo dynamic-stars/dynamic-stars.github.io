@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="logo.png">
+    <title>Dynamic Stars VI</title>
+</head>
+<body>
+    <menu id="menu">
+        <div class="billbd">
+            <i>Dynamic Stars.</i>
+        </div>
+        <br>
+        <a href="index.html"><button><img src="src/icon/home.png" width="20px"> Home</button></a>
+        <br>
+        <a href="about.html"><button><img src="src/icon/about.png" width="20px"> About Us</button></a>
+        <br>
+        <a href="contact.html"><button><img src="src/icon/tel.png" width="20px"> Contact Us</button></a>
+        <br>
+        <a href="support.html"><button><img src="src/icon/thumb.png" width="20px"> Support</button></a>
+        <button class="white-btn" onclick="toggleMenu()">CLOSE</button>
+    </menu>
+    <header class="mobile-menu" id="mobm">
+            <button class="ico-btn" onclick="toggleMenu()"><img src="src/icon/menu.png" width="30px"></button>
+            <div class="billbd">
+                <i>Dynamic Stars.</i>
+            </div>
+    </header>
+    <main id="main">
+        <div class="text">
+            <p><strong>
+                <i>Contact us for more information.</i>
+            </strong></p>
+        </div>
+        <div class="mid">
+            <img class="pump" src="src/toon4.png" width="50%" style="max-width: 300px;">
+        </div>
+        <div class="mid">
+            <div class="box">
+                <p><strong>
+                    <i>Phone:</i>
+                </strong></p>
+                <p></p>
+                <p class="little">tel: +234 07043526821</p>
+                <p class="little">from: Nigeria</p>
+                <p style="display: flex;">
+                    <button class="ass-btn"onclick="call()" >
+                        <img src="src/icon/tel.png" width="16px" style="margin: 0px 5px;"> 
+                        Call
+                    </button>
+                    <button class="ass-btn" onclick="mail()">
+                        <img src="src/icon/mail.png" width="18px" style="margin: 0px 5px;"> 
+                        Send Mail
+                    </button>
+                </p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <footer>
+            <br>
+            <strong>SKILL-UP VOCATIONAL TRAINING CENTER LAGOS</strong>
+            <br>
+            Empowering Youth • Creating Jobs • Building the Future
+            
+            © 2026 SKILL-UP Vocational Training Center Lagos
+        </footer>
+    </main>
+    <script src="scripts/about.js"></script>
+    <script src="scripts/website.js"></script>
+</body>
+</html>
